@@ -1,0 +1,13 @@
+#!/bin/bash
+
+name=QBOX
+version=0.1
+dirbox=$(pwd)
+python -m venv env
+
+bash source "$dirbox"/env/bin/activate
+
+mkdir -p ~/apps
+mkdir -p ~/apps/qbox
+cp -r "${dirbox}"/* ~/apps/qbox/
+echo "Qbox установлен в $USER/apps/qbox"

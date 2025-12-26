@@ -1,0 +1,2 @@
+#!/bin/sh
+distrobox enter qbox-deb -- sudo apt "$1" "$2" "$3" "$4"
